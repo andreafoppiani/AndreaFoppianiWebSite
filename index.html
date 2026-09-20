@@ -3,8 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Andrea Foppiani</title>
-<meta name="description" content="Andrea Foppiani — Cybersecurity executive focused on IT/OT and cloud infrastructure. Based in Milan.">
+<title>Andrea Foppiani | Cybersecurity Executive | IT/OT & Cloud Infrastructure</title>
+<meta name="description" content="Andrea Foppiani is a cybersecurity executive focused on IT/OT and cloud infrastructure, based in Italy. Explore his professional profile, expertise, and career background.">
+<meta name="keywords" content="Andrea Foppiani, cybersecurity executive, IT/OT security, cloud infrastructure, cybersecurity Italy, digital transformation">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://andreafoppiani.com/">
+<meta property="og:title" content="Andrea Foppiani | Cybersecurity Executive">
+<meta property="og:description" content="Cybersecurity executive focused on IT/OT and cloud infrastructure, based in Italy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://andreafoppiani.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Andrea Foppiani | Cybersecurity Executive">
+<meta name="twitter:description" content="Cybersecurity executive focused on IT/OT and cloud infrastructure.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,6 +141,28 @@
     margin: 4px 0 0 0;
   }
 
+  .profile-copy {
+    margin-top: 8px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+  }
+
+  .profile-copy h2 {
+    margin: 0 0 8px 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .profile-copy p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+  }
+
   /* ---- Links panel ---- */
   .links {
     padding: 44px 40px;
@@ -167,6 +199,42 @@
 
   @keyframes slide-in {
     to { opacity: 1; transform: translateX(0); }
+  }
+
+  .skill-box {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .skill-box h3 {
+    margin: 0 0 12px 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .skill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill-list li {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    border: 1px solid var(--line);
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 500;
   }
 
   .link-row a {
@@ -246,17 +314,22 @@
       <div class="monogram">AF</div>
       <div>
         <h1 class="name">Andrea Foppiani</h1>
-        <p class="role">Cybersecurity executive focused on IT/OT and cloud infrastructure.</p>
+        <p class="role">Cybersecurity Executive | IT/OT & Cloud Infrastructure</p>
       </div>
       <p class="location"><span class="dot"></span>Piacenza, Italy</p>
-      <p class="bio">Currently leading cybersecurity at Orbia, with a background spanning IT/OT infrastructure, cloud, and large-scale enterprise migrations.</p>
+      <p class="bio">Cybersecurity leader with a strong focus on operational resilience, cloud security, and enterprise transformation across IT/OT environments.</p>
+
+      <div class="profile-copy">
+        <h2>About Andrea Foppiani</h2>
+        <p>Andrea Foppiani is a cybersecurity executive helping organizations secure critical infrastructure, modernize cloud environments, and strengthen digital resilience. With experience across IT/OT, enterprise architecture, and technology strategy, he supports businesses navigating security, compliance, and transformation in complex operating environments.</p>
+      </div>
     </section>
 
     <section class="links">
       <p class="links-heading">Find me</p>
       <ul class="link-list">
         <li class="link-row">
-          <a href="https://www.linkedin.com/in/andreafoppiani/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/andreafoppiani/" target="_blank" rel="me noopener noreferrer">
             <span class="label-group">
               <span>LinkedIn</span>
               <span class="link-sub">Professional profile & network</span>
@@ -264,9 +337,40 @@
           </a>
         </li>
       </ul>
+
+      <div class="skill-box">
+        <h3>Core expertise</h3>
+        <ul class="skill-list" aria-label="Professional expertise areas">
+          <li>Cybersecurity Strategy</li>
+          <li>IT/OT Security</li>
+          <li>Cloud Infrastructure</li>
+          <li>Enterprise Security</li>
+          <li>Digital Transformation</li>
+          <li>Infrastructure Resilience</li>
+        </ul>
+      </div>
+
       <footer>&copy; <span id="year"></span> Andrea Foppiani</footer>
     </section>
   </main>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Andrea Foppiani",
+      "jobTitle": "Cybersecurity Executive",
+      "description": "Cybersecurity executive focused on IT/OT and cloud infrastructure.",
+      "url": "https://andreafoppiani.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/andreafoppiani/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IT"
+      }
+    }
+  </script>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
